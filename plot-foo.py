@@ -25,4 +25,3 @@ plt.plot(y1)
 y2 = np.random.random(11)
 plt.scatter(x,y2,color="red")
 plt.show()
-

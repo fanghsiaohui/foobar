@@ -15,4 +15,3 @@ y1 = fibo(60)
 println("add a number")
 push!(y1, 100)
 println(y1)
-
