@@ -3,6 +3,7 @@ function fibo(n)
 	a, b = 0, 1
 	f = []
 	while b <= n
+		print(b, end=' ')
 		push!(f, b)
 		a, b = b, a+b
 	end
