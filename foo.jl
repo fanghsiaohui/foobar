@@ -1,3 +1,6 @@
+
+
+###
 #= fibo function
 println("hello, julia")
 function fibo(n)
@@ -11,13 +14,14 @@ function fibo(n)
 	println()
 	return f
 end
-=#
 
 y1 = fibo(60)
 println("add a number")
 push!(y1, 100)
 println(y1)
+=#
 
+#=
 C_code = """
 #include <stddef.h>
 double c_sum(size_t n, double *X) {
@@ -40,3 +44,4 @@ end
 c_sum(X::Array{Float64}) = ccall(("c_sum", Clib), Float64, (Csize_t, Ptr{Float64}), length(X), X)
 
 c_sum(a)
+=#
