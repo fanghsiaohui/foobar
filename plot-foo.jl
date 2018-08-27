@@ -17,8 +17,9 @@ push!(y1, 100)
 println(y1)
 
 using Plots
+pyplot()
 x = 1:11
-plot(y1)
+p1 = plot(x,y1)
 y2 = rand(11)
-scatter(y2,color="red")
-gui()
+p2 = scatter(x,y2)
+display(p1)
