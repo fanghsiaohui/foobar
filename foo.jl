@@ -1,3 +1,6 @@
+for i in 10:
+	α=1
+
 println("hello, julia")
 function fibo(n)
 	a, b = 0, 1
