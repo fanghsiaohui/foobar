@@ -1,6 +1,7 @@
 for i in 10:
 	α=1
 
+#= a simple test function
 println("hello, julia")
 function fibo(n)
 	a, b = 0, 1
@@ -18,8 +19,9 @@ y1 = fibo(60)
 println("add a number")
 push!(y1, 100)
 println(y1)
-
 #=
+
+#= C++ code
 C_code = """
 #include <stddef.h>
 double c_sum(size_t n, double *X) {
