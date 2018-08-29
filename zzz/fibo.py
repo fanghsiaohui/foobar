@@ -1,18 +1,13 @@
-#! /usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-
-def fib(n):
+def fibo(n):
+    f = []
     a, b = 0, 1
-    while b <n:
-        print(b, end=' ')
-        a, b = b, a + b
-    print()
+    while b <= n:
+        f.append(b)
+        a, b = b, a+b
+    return f
 
-def fib2(n):
-    result = []
-    a, b = 0, 1
-    while b < n:
-        result.append(b)
-        a, b = b, a + b
-    return result
-
+import sys
+for i in range(1,len(sys.argv)):
+    print(fibo(int(sys.argv[i])))
