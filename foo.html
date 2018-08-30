@@ -1,0 +1,41 @@
+<pre><font color="#8AE234"><b>julia&gt; </b></font>for i in 1:5
+           p = histogram(rand(10))
+           display(p)
+           end
+<font color="#D3D7CF">             ┌────────────────────────────────────────┐</font> 
+   <font color="#D3D7CF">(0.0,0.2] │</font><font color="#3465A4">▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 1</font>                               <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.2,0.4] │</font><font color="#3465A4">▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 1</font>                               <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.4,0.6] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>                       <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.6,0.8] │</font><font color="#3465A4">▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 1</font>                               <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.8,1.0] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 5</font> <font color="#D3D7CF">│</font> 
+<font color="#D3D7CF">             └────────────────────────────────────────┘</font> 
+
+<font color="#D3D7CF">             ┌────────────────────────────────────────┐</font> 
+   <font color="#D3D7CF">(0.0,0.2] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 1</font>                          <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.2,0.4] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>             <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.4,0.6] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 3</font> <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.6,0.8] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>             <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.8,1.0] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>             <font color="#D3D7CF">│</font> 
+<font color="#D3D7CF">             └────────────────────────────────────────┘</font> 
+
+<font color="#D3D7CF">             ┌────────────────────────────────────────┐</font> 
+   <font color="#D3D7CF">(0.0,0.2] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>             <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.2,0.4] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 1</font>                          <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.4,0.6] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>             <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.6,0.8] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>             <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.8,1.0] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 3</font> <font color="#D3D7CF">│</font> 
+<font color="#D3D7CF">             └────────────────────────────────────────┘</font> 
+
+<font color="#D3D7CF">             ┌────────────────────────────────────────┐</font> 
+   <font color="#D3D7CF">(0.2,0.4] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 3</font>                <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.4,0.6] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>                       <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.6,0.8] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 5</font> <font color="#D3D7CF">│</font> 
+<font color="#D3D7CF">             └────────────────────────────────────────┘</font> 
+
+<font color="#D3D7CF">             ┌────────────────────────────────────────┐</font> 
+   <font color="#D3D7CF">(0.2,0.4] │</font><font color="#3465A4">▇▇▇▇▇▇</font><font color="#D3D7CF"> 1</font>                                <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.4,0.6] │</font><font color="#3465A4">▇▇▇▇▇▇</font><font color="#D3D7CF"> 1</font>                                <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.6,0.8] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 2</font>                          <font color="#D3D7CF">│</font> 
+   <font color="#D3D7CF">(0.8,1.0] │</font><font color="#3465A4">▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇</font><font color="#D3D7CF"> 6</font> <font color="#D3D7CF">│</font> 
+<font color="#D3D7CF">             └────────────────────────────────────────┘</font> 
+</pre>

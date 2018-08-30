@@ -1,5 +1,8 @@
 for i in 10:
 	α=1
+:r!pwd
+/c/Users/fang/AppData/Local/Programs/Microsoft VS Code
+
 
 #= a simple test function
 println("hello, julia")
