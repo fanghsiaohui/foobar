@@ -1,8 +1,16 @@
-for i in 10:
-	α=1
-:r!pwd
-/c/Users/fang/AppData/Local/Programs/Microsoft VS Code
-
+function Babylonian(x; N = 10) 
+    t = (1+x)/2
+    for i = 2:N; t=(t + x/t)/2  end    
+    t
+end
+x=2; Babylonian(x),√x
+using Plots
+pyplot()
+i = 0:.01:49
+p=plot([x->Babylonian(x,N=i) for i=1:5],i,label=["Iteration $j" for i=1:1,j=1:5])
+display(p)
+#plot!(sqrt,i,c="black",label="sqrt",
+#      title = "Those Babylonians really knew how to √")
 
 #= a simple test function
 println("hello, julia")
@@ -22,7 +30,7 @@ y1 = fibo(60)
 println("add a number")
 push!(y1, 100)
 println(y1)
-#=
+=#
 
 #= C++ code
 C_code = """
