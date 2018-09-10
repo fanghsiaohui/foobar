@@ -1,3 +1,16 @@
+# pi
+function p(n)
+		m = 0
+		for i in 1:n
+				x, y = rand(), rand()
+				if (2x-1)^2 + (2y-1)^2 <= 1
+						m += 1
+				end
+		end
+		return 4m/n
+end
+
+#=
 function Babylonian(x; N = 10) 
     t = (1+x)/2
     for i = 2:N; t=(t + x/t)/2  end    
@@ -9,6 +22,7 @@ pyplot()
 i = 0:.01:49
 p=plot([x->Babylonian(x,N=i) for i=1:5],i,label=["Iteration $j" for i=1:1,j=1:5])
 display(p)
+=#
 #plot!(sqrt,i,c="black",label="sqrt",
 #      title = "Those Babylonians really knew how to √")
 
