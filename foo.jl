@@ -1,14 +1,27 @@
+using Plots
+unicodeplots()
+x = 1:100
+y1 = cos.(x)
+y2 = log.(x)
+println(x)
+p1 = plot(x,y1)
+p2 = plot!(x, y2)
+display(p2)
+println(y2)
+
+#=
 # pi
 function p(n)
-		m = 0
-		for i in 1:n
-				x, y = rand(), rand()
-				if (2x-1)^2 + (2y-1)^2 <= 1
-						m += 1
-				end
+	m = 0
+	for i in 1:n
+		x, y = rand(), rand()
+		if (2x-1)^2 + (2y-1)^2 <= 1
+			m += 1
 		end
-		return 4m/n
+	end
+	return 4m/n
 end
+=#
 
 #=
 function Babylonian(x; N = 10) 
