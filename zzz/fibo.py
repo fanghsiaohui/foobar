@@ -11,3 +11,6 @@ def fibo(n):
 import sys
 for i in range(1,len(sys.argv)):
     print(fibo(int(sys.argv[i])))
+
+n = int(input('input a number: \n'))
+print(fibo(n))

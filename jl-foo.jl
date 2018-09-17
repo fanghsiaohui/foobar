@@ -1,7 +1,6 @@
 # julia test file
-println("hello,$PROGRAM_FILE")
-println(ARGS)
-for i in ARGS
-	println(i)
+n = 1
+while true
+		println("$n: $(Char(n))")
+		global n += 1
 end
-
