@@ -1,6 +1,4 @@
 # julia test file
-n = 1
-while true
-		println("$n: $(Char(n))")
-		global n += 1
+for i in 1:10
+	println(i)
 end
