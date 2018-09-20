@@ -8,3 +8,4 @@ function fibo(n)
 	end
 	return f
 end
+fibo(100)
