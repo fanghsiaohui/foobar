@@ -5,6 +5,7 @@
 # pdb.set_trace()
 
 # t = ('t1', 't2', 't3')
+
 # l = ['l1', 'l2', 'l3']
 # d = {'k1':'v1', 'k2':'v2', 'k3':'v3'}
 # s = {'s1', 's2', 's3'}
@@ -69,5 +70,55 @@
 # print(r)
 # print(r2)
 
-import re
-print(dir(re))
+# import re
+# print(dir(re))
+
+# import json
+# 
+# json_str = '[{"name":"zhao", "age":50, "flag":false}, {"name":"zhao", "age":50}]'
+# 
+# student = json.loads(json_str)
+# 
+# print(type(student))
+# print(student)
+
+# from enum import Enum
+# 
+# yellow = 1
+# green = 2
+# 
+# a = {
+#         'yellow':1, 
+#         'green':2
+#         }
+# # 可以改变内容
+# 
+# class TypeDiamond():
+#     yellow = 1
+#     green = 2
+# # 可变
+# # 没有防止相同标签的功能
+
+# from enum import Enum
+# 
+# class VIP(Enum):
+#     YELLOW = 1
+#     GREEN = 1
+#     BLACK = 3
+#     RED = 4
+# # 内容不能轻易更改
+# # 可以遍历
+# 
+# for i in VIP:
+# # for i in VIP.__members__:
+#      print(i)
+#  
+# print(VIP(3))
+# 
+# # 获取标签的值
+# # print(VIP.GREEN.value)
+# # print(VIP.GREEN.name)
+# # print(VIP['GREEN'])
+# 
+from enum import IntEnum
+
