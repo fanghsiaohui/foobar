@@ -120,5 +120,21 @@
 # # print(VIP.GREEN.name)
 # # print(VIP['GREEN'])
 # 
-from enum import IntEnum
+# from enum import IntEnum
 
+from datetime import datetime
+def f(n):
+    for i in range(9):
+        begintime = datetime.now()
+        for j in range(n):
+            pass
+        endtime = datetime.now()
+        time = endtime - begintime
+        print("{0:2d}: n = {1}, time = {2:.6f} milliseconds".format(i+1, n, time.total_seconds()*1000))
+
+import sys
+if len(sys.argv) > 1:
+    n = int(sys.argv[1])
+else:
+    n = 100000
+f(n)
