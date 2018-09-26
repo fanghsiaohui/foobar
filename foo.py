@@ -335,9 +335,9 @@
 # s = 4321
 # n = 0
 
-hahaha# n = int(input("enter a number: "))hahaha
-hahaha# print(n, '=', end=' ')hahaha
-hahaha# i = 2hahaha
+# n = int(input("enter a number: "))
+# print(n, '=', end=' ')
+# i = 2
 # while n != 1:
 #     while n % i == 0:
 #         n //= i
@@ -346,3 +346,14 @@ hahaha# i = 2hahaha
 #         else:
 #             print("{} *".format(i), end=' ')
 #     i += 1
+
+# import turtle
+# turtle.pensize(2)
+# turtle.circle(4)
+# turtle.circle(8)
+# turtle.circle(10)
+# turtle.circle(13)
+# turtle.circle(15)
+# turtle.circle(18)
+
+
