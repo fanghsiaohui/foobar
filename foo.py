@@ -19,4 +19,3 @@ else:
     print("error input")
 
 # example 2
-
