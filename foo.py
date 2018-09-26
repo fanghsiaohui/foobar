@@ -7,15 +7,31 @@
 # bit songtian
 
 # example 1
-TempStr = input("enter something: ")
-# print(TempStr)
-if TempStr[-1] in ['f', 'F']:
-    C = (eval(TempStr[:-1]) - 32)/1.8
-    print("convert: {:.2f}C".format(C))
-elif TempStr[-1] in ['c', 'C']:
-    F = 1.8*eval(TempStr[:-1]) + 32
-    print("convert: {:.2f}F".format(F))
-else:
-    print("error input")
+# TempStr = input("enter something: ")
+# # print(TempStr)
+# if TempStr[-1] in ['f', 'F']:
+#     C = (eval(TempStr[:-1]) - 32)/1.8
+#     print("convert: {:.2f}C".format(C))
+# elif TempStr[-1] in ['c', 'C']:
+#     F = 1.8*eval(TempStr[:-1]) + 32
+#     print("convert: {:.2f}F".format(F))
+# else:
+#     print("error input")
 
 # example 2
+import turtle
+turtle.setup(650, 350, 200, 200)
+turtle.penup()
+turtle.fd(-250)
+turtle.pendown()
+turtle.pensize(25)
+turtle.pencolor("purple")
+turtle.seth(-40)
+for i in range(4):
+    turtle.circle(40, 80)
+    turtle.circle(-40, 80)
+turtle.circle(40, 80/2)
+turtle.fd(40)
+turtle.circle(16, 180)
+turtle.fd(40 * 2/3)
+turtle.done()
