@@ -36,21 +36,10 @@ import turtle
 # turtle.fd(40 * 2/3)
 # # turtle.done()
 
-import time, sys
-def f(n):
-    starttime = time.time()
-    for i in range(n):
-        m = (i+1)**2
-        if m == n*n:
-            print(i+1,m)
-    endtime = time.time()
-    lasttime = (endtime - starttime)*1000
-    print(lasttime)
-
-# n = int(sys.argv[1])
-for i in range(8):
-    print(i+1)
-    n = 10**(i+1)
-    f(n)
-    print("=========")
-
+# something
+x = int(input("enter a number: "))
+s = 0
+while x != 0:
+    s = s*10 + x % 10
+    x //= 10
+print("reversed: %d" % s)
