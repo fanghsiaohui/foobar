@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 # coding: utf-8
  
-import pdb
+# import pdb
 # pdb.set_trace()
 
-s = 0
-pdb.set_trace()
-for i in range(10):
-    s += i
-print(i, s)
-pdb.set_trace()
-print("hello")
-pdb.set_trace()
-print("world")
+import time
+def f(n):
+    l = range(10**n+1)
+    start = time.time()
+    s = sum(l)
+    over = time.time()
+    t = over - start
+    print(t)
+    print(s)
+    print(type(t))
+    return t
+
