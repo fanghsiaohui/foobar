@@ -1,0 +1,2 @@
+foo : 
+	cc foo.c
