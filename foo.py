@@ -7,16 +7,16 @@
 
 def deco(func):
     print("before")
-    def func():
+    def wrapper(args):
         print("after")
-    return func
+        func(args)
+    return wrapper
 
+@deco
 def add(args):
     s = sum(args)
     print("sum = {}".format(s))
     return s
 
 x = [1,2,3]
-
-@deco
 add(x)
