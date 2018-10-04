@@ -6,9 +6,18 @@ import re
 # import pdb
 # pdb.set_trace()
 
-s = "life is short, i use python"
-r = re.findall("life(.*)python", s)
-#print(r.group(1))
-#print(type(r.group(1)))
-print(r)
-print(type(r))
+def deco(func):
+    print("before")
+    def wrapper(args):
+        print("after")
+        func(args)
+    return wrapper
+
+@deco
+def add(args):
+    s = sum(args)
+    print("sum = {}".format(s))
+    return s
+
+x = [1,2,3]
+add(x)
