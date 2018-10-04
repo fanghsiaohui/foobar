@@ -1,29 +1,22 @@
 #!/usr/bin/env python3
 # coding: utf-8
  
-import sys, time
-import re
 # import pdb
 # pdb.set_trace()
+import sys, re, time
+import numpy as np
+# import matplotlib.pyplot as plt
 
-def deco(func):
-    print("before")
-    def wrapper(*args, **kw):
-        print("after")
-        func(*args, **kw)
-    return wrapper
-
-@deco
-def add(alist, x):
-    s = sum(alist)
-    print("sum = {}, and 2nd = {}".format(s, x))
-    return s
-
-l = [1,2,3]
-add(l, 5)
-
-if __name__ == "__main__":
-    print("run as main")
-else:
-    print("run as module")
-
+# code below
+a = np.array([1, 2, 3, 4])
+b = np.array([5, 6, 7, 8])
+c = np.array([
+    [1,2,3,4],
+    [4,5,6,7],
+    [7,8,9,10]])
+print(a)
+print(b)
+print(c)
+c.shape = (4,3)
+print(c)
+ZZ
