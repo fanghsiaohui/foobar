@@ -1,3 +1,3 @@
 foo : 
-	cc foo.c -o a.out
+	cc foo.c
 
