@@ -8,16 +8,22 @@ import re
 
 def deco(func):
     print("before")
-    def wrapper(args):
+    def wrapper(*args, **kw):
         print("after")
-        func(args)
+        func(*args, **kw)
     return wrapper
 
 @deco
-def add(args):
-    s = sum(args)
-    print("sum = {}".format(s))
+def add(alist, x):
+    s = sum(alist)
+    print("sum = {}, and 2nd = {}".format(s, x))
     return s
 
-x = [1,2,3]
-add(x)
+l = [1,2,3]
+add(l, 5)
+
+if __name__ == "__main__":
+    print("run as main")
+else:
+    print("run as module")
+
