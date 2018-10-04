@@ -5,9 +5,6 @@
 # import pdb
 # pdb.set_trace()
 
-with open("bar.c", 'w') as f:
-    f.write("hello\n")
-
-f.read(size)
-f.read()
-
+print("first line")
+print("second line")
+print("third line")
