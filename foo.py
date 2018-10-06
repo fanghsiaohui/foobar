@@ -4,23 +4,15 @@
 # import pdb
 # pdb.set_trace()
 # import sys, re, time
-# import numpy as np
-# import matplotlib.pyplot as plt
-from scipy.optimize import fsolve
-from math import sin, cos
+import numpy as np
+import matplotlib.pyplot as plt
 
 # code below
-def f(x):
-    x0 = float(x[0])
-    x1 = float(x[1])
-    x2 = float(x[2])
-    return [
-            5*x1 + 3,
-            4*x0**2 - 2*sin(x1*x2),
-            x1*x2 -1.5
-            ]
-
-result = fsolve(f, [1,1,1])
-print(result)
-print(f(result))
-
+x = np.linspace(1,10,1000)
+y = np.sin(x)
+plt.figure()
+plt.plot(x, y, label="中文chinese", color="red")
+plt.ylim(-2,2)
+plt.ylabel("哈哈haha")
+plt.legend()
+plt.show()
