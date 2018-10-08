@@ -24,9 +24,8 @@ def f(dirs, newfile):
             f(filetodo, newfile)
 
 cwd = os.getcwd()
-p = input("path to be cat: ")
-p = os.path.join(cwd, p)
+path = input("path to be cat: ")
+path = os.path.join(cwd, path)
 fi = os.path.join(cwd, p) + ".txt"
-f(d, fi)
-print(d, fi)
+f(path, fi)
 
