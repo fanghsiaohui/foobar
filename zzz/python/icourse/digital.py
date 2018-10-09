@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 # coding: utf-8
  
-# import pdb
-# pdb.set_trace()
-# import sys, re, time, os, shutil, command
-# from functools import wraps
-
 def pandigital(nums):
     lst= []
     if type(nums) == int:
@@ -18,6 +13,8 @@ def pandigital(nums):
         else:
             lst.append(int(num))
             print(num)
+    if not lst:
+        print("not found")
     return lst
 
 if __name__ == "__main__":
