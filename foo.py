@@ -6,3 +6,7 @@
 # import sys, re, time, os, shutil, command
 # from functools import wraps
 
+fmt = "hello, %s, %s enough for ya?"
+print(fmt)
+values = ("world", "hot")
+print(fmt % values)
