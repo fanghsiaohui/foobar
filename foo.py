@@ -5,14 +5,37 @@
 # pdb.set_trace()
 # import sys, re, time, os, shutil, command
 # from functools import wraps
-#print(*(enumerate(range(10))))
+# print(*(enumerate(range(10))))
+# print(sys.getrecursionlimit())
 
-import time, sys
-def timer2():
-    i = 0
-    while True:
-        print("{:02d}s".format(i))
-        time.sleep(1)
-        i += 1
-if __name__ == "__main__":
-    timer2()
+def rvs(s):
+    if s == "":
+        return s
+    else:
+        return rvs(s[1:])+s[0]
+# print(rvs("hello"))
+
+def f(n):
+    if n ==1 or n == 2:
+        return 1
+    else:
+        return f(n-1) + f(n - 2)
+
+# for i in range(1,11):
+#     print(f(i))
+
+count = 0
+def hanoi(n, src, dst, mid):
+    global count
+    if n == 1:
+        #print("{}: {}->{}".format(1, src, dst))
+        count += 1
+    else:
+        hanoi(n-1, src, mid, dst)
+        #print("{}: {}->{}".format(n, src, dst))
+        count += 1
+        hanoi(n-1, mid, dst, src)
+
+hanoi(30, 'A', 'C', 'B')
+print(count)
+
