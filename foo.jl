@@ -1,6 +1,2 @@
-#/usr/bin/env julia
-
-# import Dates
+#import Dates
 println("hello, julia")
-
-
