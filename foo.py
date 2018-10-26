@@ -7,3 +7,7 @@
 # from functools import wraps
 # print(*(enumerate(range(10))))
 
+s = "abcdefg"
+for i, c in enumerate(s, 5):
+    print(i, c)
+
