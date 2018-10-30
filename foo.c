@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <math.h>
 int main(){
-    printf("hello, c\n");
+    for ( int i = 1; i < 100; i ++){
+        printf("%3d: hello, c@arch\n", i + 1);
+    }
     return 0;
 }
