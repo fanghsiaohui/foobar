@@ -1,7 +1,7 @@
 #!/bin/bash
-while read line 
+for i in $(seq 10)
 do
-    echo $line
-    sleep 0.3
-done < dir
+    echo $i
+    sleep 0.2
+done
 
