@@ -1,7 +1,6 @@
 #!/bin/bash
-
-for i in $(seq 10)
+for i in {1..10}
 do
-    echo $i
-    sleep 0.2
+    echo $i >> sh.t
+    sleep 3
 done
