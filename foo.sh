@@ -1,2 +1,3 @@
 #!/bin/bash
-ZZ
+ls /tmp/file  2> err.t
+
