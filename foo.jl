@@ -1,5 +1,9 @@
 #!/usr/bin/julia
-a=open("d","r")
-l1=read(a,String)
-println(l1)
-println(typeof(l1))
+while true
+    line=readline()
+    if line == ""
+        break
+    end
+    println(line)
+end
+println("ending")
