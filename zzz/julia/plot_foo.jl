@@ -17,7 +17,6 @@ push!(y1, 100)
 println(y1)
 
 using Plots
-pyplot()
 x = 1:11
 p1 = plot(x,y1)
 y2 = rand(11)
