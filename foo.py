@@ -5,9 +5,7 @@
 # from functools import wraps
 # print(*(enumerate(range(10))))
 import numpy as np
+import matplotlib.pyplot as plt
 import time
-
-x=np.arange(10)
-print(x)
-x=np.ones((2,3,4))
-print(x)
+print(time.perf_counter())
+print(np.random.randn(10))
