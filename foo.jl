@@ -1,13 +1,9 @@
 #!/usr/bin/julia
-function timer(n=5)
-    println("n=$n")
-    while n >= 1
-        println(n)
-        sleep(1)
-        n -= 1
-    end
-    println(0)
-    println("n=$n")
-    return n
-end
-timer()
+using Dates
+startTime=Dates.now()
+x=rand(100,100)
+y=rand(100,100)
+xy=x*y
+println(length(xy))
+endTime=Dates.now()
+println(endTime-startTime)
