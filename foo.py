@@ -5,3 +5,8 @@
 # from functools import wraps
 # print(*(enumerate(range(10))))
 
+import sys
+print("system standard input: ", end="")
+sys.stdout.flush()
+a=sys.stdin.read()
+print("a=", a.strip())
