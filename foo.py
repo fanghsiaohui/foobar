@@ -7,6 +7,8 @@
 
 from bs4 import BeautifulSoup
 import requests
+import bs4
+
 url = "http://127.0.0.1"
 r = requests.get(url)
 demo = r.text
