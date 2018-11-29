@@ -1,9 +1,10 @@
 #!/usr/bin/julia
-using Dates
-startTime=Dates.now()
-x=rand(100,100)
-y=rand(100,100)
-xy=x*y
-println(length(xy))
-endTime=Dates.now()
-println(endTime-startTime)
+using UnicodePlots
+f="a"
+while f != "q" && f != "Q"
+    x = randn(1000000)
+    display(histogram(x))
+    println("q or Q to quit: ")
+    global f
+    f = readline()
+end

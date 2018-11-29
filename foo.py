@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 # import pdb
 # pdb.set_trace()
 # import sys, re, time, os, shutil, command
