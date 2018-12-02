@@ -23,19 +23,20 @@ class Weight(pygame.sprite.Sprite):
         self.rect.top += 1
         if self.rect.top > screen_size[1]:
             self.reset()
+
 pygame.init()
 screen_size = 800, 600
-pygame.display.set_node(screen_size, FULLSCREEN)
-pygame.mouse.set_visible(0)
+pygame.display.set_mode(screen_size, FULLSCREEN)
+pygame.mouse.set_visible(1)
 
 weight_image = pygame.image.load("weight.png")
-weight_image = weight_image.convert()
+#weight_image = weight_image.convert()
 
 sprites = pygame.sprite.RenderUpdates()
 sprites.add(Weight())
 
 screen = pygame.display.get_surface()
-bg = (255, 255, 255)
+bg = (32, 128, 220)
 screen.fill(bg)
 pygame.display.flip()
 
@@ -48,6 +49,7 @@ while True:
             sys.exit()
         if event.type == KEYDOWN and event.key == K_ESCAPE:
             sys.exit()
+
 sprites.clear(screen, clear_callback)
 sprites.update()
 updates = sprites.draw(screen)
