@@ -6,13 +6,13 @@
 
 import tkinter
 def func():
-    pass
+    print("hello, sb")
 
 def test():
     win = tkinter.Tk()
     win.title("tk title")
     win.geometry("900x600")
-    btn = tkinter.Button(win, text = "tk btn", command = func())
+    btn = tkinter.Button(win, text = "click me", command = func)
     btn.pack(expand = 1, fill = "y")
     tkinter.mainloop()
 
