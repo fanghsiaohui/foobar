@@ -1,0 +1,13 @@
+python:
+    numpy
+    matplotlib
+    requests
+    beautifulsoup
+    tkinter
+
+julia
+    beautifulsoup
+    gui
+
+android
+
