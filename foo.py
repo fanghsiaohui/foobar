@@ -4,8 +4,6 @@
 # from functools import wraps
 # print(*(enumerate(range(10))))
 
-import random
-
 def main():
     pass
 
