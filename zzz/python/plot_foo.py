@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding:utf-8 -*-
+
 def fibo(n):
     print("hello, python")
     f = []

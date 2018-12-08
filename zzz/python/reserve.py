@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# coding: utf-8
  
 x = int(input("enter a number: "))
 s = 0

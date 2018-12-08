@@ -1,14 +1,7 @@
 #!/usr/bin/env python3
-# coding: utf-8
  
-# import pdb
-# pdb.set_trace()
-# import sys, re, time, os, shutil, command
-# from functools import wraps
-# print(*(enumerate(range(10))))
-# print(sys.getrecursionlimit())
-
 import turtle
+
 def koch(size, n):
     if n == 0:
         turtle.fd(size)

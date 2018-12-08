@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-# import pdb
-# pdb.set_trace()
-# import sys, re, time, os, shutil, command
-# from functools import wraps
-# print(*(enumerate(range(10))))
 
 import time
 import numpy as np
@@ -11,7 +6,6 @@ import matplotlib.pyplot as plt
 
 a = np.arange(0., 5., 0.02)
 plt.plot(a, np.cos(2*np.pi*a), "r--")
-
 plt.xlabel("x axis")
 plt.ylabel("y axis")
 plt.title("$y=cos(2\pi x)$")
