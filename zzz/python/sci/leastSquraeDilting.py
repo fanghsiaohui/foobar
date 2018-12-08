@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
-# coding: utf-8
  
-# import pdb
-# pdb.set_trace()
-import sys, re, time
 import numpy as np
 import pylab as pl
 from scipy.optimize import leastsq
-# import matplotlib.pyplot as plt
 
-# code below
 def func(x,p):
     """
     A*sin(2*pi*kk*x + theta)

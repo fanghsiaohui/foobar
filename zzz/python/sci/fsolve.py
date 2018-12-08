@@ -1,15 +1,8 @@
 #!/usr/bin/env python3
-# coding: utf-8
  
-# import pdb
-# pdb.set_trace()
-# import sys, re, time
-# import numpy as np
-# import matplotlib.pyplot as plt
 from scipy.optimize import fsolve
 from math import sin, cos
 
-# code below
 def f(x):
     x0 = float(x[0])
     x1 = float(x[1])

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# coding : utf-8
+
 import scipy.signal as signal
 import numpy as np
 import pylab as pl
@@ -25,4 +25,3 @@ y3 = np.sum((y-y2)**2)
 print(y3)
 pl.plot(t, y, t, y2)
 pl.show()
-
