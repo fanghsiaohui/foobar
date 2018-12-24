@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
- 
 import os
 
 def cat(fromfile, tofile):
@@ -27,4 +26,3 @@ path = input("path to be cat: ")
 path = os.path.join(cwd, path)
 fi = os.path.join(cwd, p) + ".txt"
 f(path, fi)
-

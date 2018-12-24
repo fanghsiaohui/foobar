@@ -22,4 +22,3 @@ end
 
 #hanoi(parse(Int, ARGS[1]))
 hanoi(4)
-

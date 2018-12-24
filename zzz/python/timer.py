@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
- 
 import time, sys
+
 def timer(n):
     for i in range(n,0,-1):
         print("{:02d}s".format(i))

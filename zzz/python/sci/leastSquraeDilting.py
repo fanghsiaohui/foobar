@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
- 
 import numpy as np
 import pylab as pl
 from scipy.optimize import leastsq

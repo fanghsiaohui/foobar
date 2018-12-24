@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
- 
 from scipy.optimize import fsolve
 from math import sin, cos
 
@@ -16,4 +15,3 @@ def f(x):
 result = fsolve(f, [1,1,1])
 print(result)
 print(f(result))
-

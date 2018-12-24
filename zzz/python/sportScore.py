@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 from random import random
 
 def printInfo():
@@ -55,4 +54,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

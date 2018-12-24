@@ -7,4 +7,3 @@ while n != 0
     global n = div(n, 10)
 end
 println(r)
-

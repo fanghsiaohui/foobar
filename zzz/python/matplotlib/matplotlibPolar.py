@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-
 import time
 import numpy as np
 import matplotlib.pyplot as plt
+
 N = 20
 theta = np.linspace(0.0, 2*np.pi, N, endpoint=False)
 radii = 10 * np.random.rand(N)
@@ -16,4 +16,3 @@ for r, bar in zip(radii, bars):
     bar.set_alpha(0.5)
 
 plt.show()
-
