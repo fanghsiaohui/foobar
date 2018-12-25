@@ -3,8 +3,3 @@
 # from functools import wraps
 # pdb.set_trace()
 
-def main():
-    pass
-
-if __name__ == "__main__":
-    main()
