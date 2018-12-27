@@ -3,13 +3,3 @@
 # from functools import wraps
 # pdb.set_trace()
 
-import time
-i = 0
-while True:
-    print(i, end='')
-    print('\a')
-    if i < 5:
-        time.sleep(1)
-        i += 1
-    else:
-        break
