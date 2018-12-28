@@ -3,3 +3,12 @@
 # from functools import wraps
 # pdb.set_trace()
 
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import time, random, os, sys
+
+s = """改革春风吹满地
+中国人民真争气
+这个世界太疯狂
+耗子给猫当伴娘"""
