@@ -20,3 +20,4 @@ def f(x, mu=0, delta=1):
 x = np.linspace(-10,10,201)
 plt.plot(x, f(x))
 plt.show()
+print(s)
