@@ -5,19 +5,18 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd
-import time, random, os, sys
-from pprint import pprint
-
-s = """改革春风吹满地
-中国人民真争气
-这个世界太疯狂
-耗子给猫当伴娘"""
+#import pandas as pd
+#import time, random, os, sys
+#from pprint import pprint
 
 def f(x, mu=0, delta=1):
     return 1/(np.sqrt(2*np.pi)*delta)*np.exp(-((x-mu)**2)/(2*delta**2))
 
+def f2(x):
+    return x**2
 x = np.linspace(-10,10,201)
+#plt.subplot(211)
 plt.plot(x, f(x))
+#plt.subplot(212)
+plt.plot(x, f2(x))
 plt.show()
-print(s)
