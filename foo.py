@@ -18,4 +18,3 @@ plt.subplot(212)
 plt.plot(x, f2(x))
 #plt.show()
 plt.savefig("a.png")
-
