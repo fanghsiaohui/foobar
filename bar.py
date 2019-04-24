@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 from scipy.optimize import fsolve
 from pprint import pprint
 
-A = np.array([[8, 2, 9], 
-        [9, 7, 8],
-        [4, 6, 6]])
-b = np.array([67, 79, 56])
-x0 = np.array([2, 3, 5])
-Ainv = np.linalg.inv(A)
+def f(t):
+    x, y = t
+    f1 = x**2 + y**2 - 16
+    f2 = x - y - 4
+    return f1,f2
 
+solve = fsolve(f, [1, 1])
