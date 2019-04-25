@@ -19,6 +19,7 @@ if __name__ == "__main__":
     a, b, c = symbols('a, b, c')
     x, y = symbols('x, y')
     '''
+    # part 1: plot
     x = np.linspace(-10,10,201)
     plt.subplot(211)
     plt.plot(x, f1(x))
@@ -26,4 +27,8 @@ if __name__ == "__main__":
     plt.plot(x, f2(x))
     plt.savefig("a.png")
     plt.show()
+    '''
+
+    '''
+    # part 2
     '''
