@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 #import pdb, sys, os, time, re, shutil, command
 #pdb.set_trace()
-#from functools import wraps
 
 import numpy as np
 from scipy.optimize import fsolve
-import time
-from functools import wraps
 
 def f1(x, mu=0, delta=1):
     return 1/(np.sqrt(2*np.pi)*delta)*np.exp(-((x-mu)**2)/(2*delta**2))
@@ -14,6 +11,8 @@ def f1(x, mu=0, delta=1):
 def f2(x):
     return x**2
 
+import time
+from functools import wraps
 def timer(func):
     @wraps(func)
     def wrapper(*args, **kw):
