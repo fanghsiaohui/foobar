@@ -1,18 +1,29 @@
-import time, sys
-try:
-    i = int(sys.argv[1])
-except:
-    i = 3
+#!/usr/bin/env python
+import time, sys, random
 
-def test():
-    return 0
+def test(r=0.2):
+    rdm = random.random()
+    flag = 1 if rdm < r else 0
+    return flag
 
-while i>0:
-    print(i)
-    if test():
-        break
-    time.sleep(1)
-    i -= 1
-else:
-    print("0:\tfire")
+def timer(m):
+    flag = 0
+    while m > 0:
+        print(m)
+        time.sleep(1)
+        if test():
+            print("\tABORT")
+            break
+        m -= 1
+    else:
+        print(f"{m}\n\tFIRE")
+        flag = 1
+    return flag
 
+if __name__ == "__main__":
+    try:
+        m = int(sys.argv[1])
+    except:
+        m = 3
+
+    timer(m)
