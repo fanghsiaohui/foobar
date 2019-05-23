@@ -2,4 +2,4 @@
 a, b = 0, 1
 for i in range(30):
     a, b = b, a + b
-    print("{:3d}, {:30b}".format(i + 1, a))
+    print("{:3d}: {:8d}, {:8x}, {:20b}".format(i + 1, a, a, a))
