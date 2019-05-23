@@ -1,5 +1,5 @@
-#/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 a, b = 0, 1
-for i in range(10000):
+for i in range(30):
     a, b = b, a + b
-print(len(str(a)))
+    print("{:3d}, {:30b}".format(i + 1, a))
