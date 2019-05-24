@@ -1,4 +1,4 @@
 *.un~
 *~
 chan/
-godoc
+go/
