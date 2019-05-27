@@ -1,18 +1,15 @@
 package main
 import (
     "fmt"
-    "os"
+    //"os"
     //"net/http"
 )
 func main(){
-    fmt.Println(len(os.Args), os.Args)
     a, b := 0, 1
-    var p *int
-    for i := 0; i < 10; i++ {
+    for i := 0; i < 30; i++ {
         a, b = b, a + b
-        p = &i
-        fmt.Println(i, a)
-        fmt.Println(*p)
+        fmt.Printf("%3d: %12d\n", i, a)
     }
-    fmt.Println(*p, a)
 }
+
+func f()
