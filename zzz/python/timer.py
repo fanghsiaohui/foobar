@@ -9,7 +9,7 @@ def timer(n):
 
 if __name__ == "__main__":
     try:
-        n = int(sys.argv[1])
+        n = int(eval(sys.argv[1]))
     except (ValueError, IndexError):
         n = 3
     timer(n)
