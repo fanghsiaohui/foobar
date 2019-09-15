@@ -11,7 +11,7 @@ def pi(n):
     return m/n*4
 
 n = 100
-for i in range(7):
+for i in range(3):
     n *= 10
     start = time.time()
     p = pi(n)
