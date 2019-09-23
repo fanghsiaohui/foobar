@@ -1,5 +1,5 @@
 #!/usr/bin/env julia
-using Plots
+using UnicodePlots
 
 function f1(m=3, n=1000000,b=45)
     a = randn(m, n)
