@@ -13,4 +13,5 @@ function f1(m=3, n=1000000,b=45)
 end
 
 f1()
+println("press Enter to exit")
 readline()

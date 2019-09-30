@@ -1,3 +1,4 @@
 *.un~
 *~
-obs/gnome_backgrounds
+.obs
+.op

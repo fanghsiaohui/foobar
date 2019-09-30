@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import time, random
+import pdb
 def pi(n):
     m = 0
     for i in range(n):
@@ -12,6 +13,7 @@ def pi(n):
 
 n = 100
 for i in range(3):
+    pdb.set_trace()
     n *= 10
     start = time.time()
     p = pi(n)
