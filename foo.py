@@ -20,7 +20,7 @@ def f0():
 def plot(func):
     @wraps(func)
     def wrapper(*args, **kw):
-        plt.plot(x, func(x))
+        plt.plot(*args, func(*args))
         plt.savefig("func.png")
         plt.show()
     return wrapper
@@ -35,8 +35,11 @@ def f2():
     result = solve(y, x)
     pprint(result)
 
+@plot
+def f3(x):
+    return x**2 - x
+
 if __name__ == "__main__":
     #pdb.set_trace()
     x = np.linspace(-5,5,201)
-    f1(x)
-    f2()
+    f3(x)
