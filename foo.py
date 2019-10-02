@@ -13,7 +13,7 @@ def pi(n):
 
 n = 100
 for i in range(3):
-    pdb.set_trace()
+    #pdb.set_trace()
     n *= 10
     start = time.time()
     p = pi(n)
