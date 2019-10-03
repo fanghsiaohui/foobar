@@ -27,8 +27,8 @@ def plot(func):
     return wrapper
 
 @plot
-def f1(x, mu=0, delta=1):
-    return 1 / (sqrt(2 * pi) * delta) * exp(-(x - mu) ** 2) / (2 * delta ** 2)
+def f1(x, mu=0, sigma=1):
+    return 1 / (sqrt(2 * pi) * sigma) * exp(-(x - mu) ** 2 / (2 * sigma ** 2))
 
 @plot
 def f2(x):
