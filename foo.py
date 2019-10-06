@@ -46,4 +46,4 @@ def f4():
 
 if __name__ == "__main__":
     #pdb.set_trace()
-    pass
+    x = np.linspace(-10, 10, 2001)
