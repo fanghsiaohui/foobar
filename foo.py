@@ -21,6 +21,7 @@ def f0():
 def plot(func):
     @wraps(func)
     def wrapper(*args, **kw):
+        plt.figure()
         plt.plot(*args, func(*args, **kw))
         plt.savefig("{}.png".format(func.__name__))
         plt.show()
