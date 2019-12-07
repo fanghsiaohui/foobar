@@ -1,50 +1,61 @@
 #!/usr/bin/env python
+import time
 
-import time, random
-import os, sys
-import pdb
+def f1():
+    for i in range(10):
+        print(i)
+        time.sleep(2)
+    print(i+1)
 
-from functools import wraps
+def f2():
+    for a in range(1, 10):
+        for b in range(1, 10):
+            for c in range(1, 10):
+                for d in range(1, 10):
+                    for e in range(1, 10):
+                        for f in range(1, 10):
+                            for g in range(1, 10):
+                                for h in range(1, 10):
+                                    for i in range(1, 10):
+                                        if len(set([a,b,c,d,e,f,g,h,i])) == 9 and a + b + c == d+e+f == g+h+i == a+d+g == b+e+h == c+f+i == a+e+i==c+e+g :
+                                            print(a,b,c)
+                                            print(d,e,f)
+                                            print(g,h,i)
+                                            print()
 
-import numpy as np
-import matplotlib.pyplot as plt
-
-from numpy import pi, sqrt, exp
-from sympy import symbols, solve, latex, pprint
-
-#import pandas as pd
-#from scipy.optimize import fsolve
-
-def f0():
-    pass
-
-def plot(func):
-    @wraps(func)
-    def wrapper(*args, **kw):
-        plt.figure()
-        plt.plot(*args, func(*args, **kw))
-        plt.savefig("{}.png".format(func.__name__))
-        plt.show()
-    return wrapper
-
-@plot
-def f1(x, mu=0, sigma=1):
-    return 1 / (sqrt(2 * pi) * sigma) * exp(-(x - mu) ** 2 / (2 * sigma ** 2))
-
-@plot
-def f2(x):
-    return x**2 - x
-
-@plot
-def f3(x):
-    return np.cos(x)
-
-def f4():
-    a, b, c, x = symbols("a, b, c, x")
-    y = a * x**2 + b * x +c
-    result = solve(y, x)
-    pprint(result)
+def f3():
+    l=list(range(1,10))
+    for a in l:
+        la=l.copy()
+        la.pop(la.index(a))
+        for b in la:
+            lb=la.copy()
+            lb.pop(lb.index(b))
+            for c in lb:
+                lc=lb.copy()
+                lc.pop(lc.index(c))
+                for d in lc:
+                    ld=lc.copy()
+                    ld.pop(ld.index(d))
+                    for e in ld:
+                        le=ld.copy()
+                        le.pop(le.index(e))
+                        for f in le:
+                            lf=le.copy()
+                            lf.pop(lf.index(f))
+                            for g in lf:
+                                lg=lf.copy()
+                                lg.pop(lg.index(g))
+                                for h in lg:
+                                    lh=lg.copy()
+                                    lh.pop(lh.index(h))
+                                    for i in lh:
+                                        if a+b+c == d+e+f == g+h+i == a+d+g == b+e+h == c+f+i == a+e+i == c+e+g:
+                                            print(a,b,c)
+                                            print(d,e,f)
+                                            print(g,h,i)
+                                            print()
+                                        
 
 if __name__ == "__main__":
-    #pdb.set_trace()
-    x = np.linspace(-10, 10, 2001)
+    f3()
