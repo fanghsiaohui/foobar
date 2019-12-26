@@ -5,6 +5,7 @@ import (
 )
 
 func main(){
-    x := 10
-    fmt.Println("hello, x =", x)
+    for x:=0;x<10;x++ {
+        fmt.Printf("x=%d\n", x)
+    }
 }
