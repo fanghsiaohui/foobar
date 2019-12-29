@@ -7,10 +7,11 @@ def f0():
         time.sleep(2)
     print(i+1)
 
-from sympy import symbols, latex, solve
+from sympy import symbols, latex, solve, pprint
 def f1():
     x, Hello, World = symbols("x, Hello, World")
-    print(latex(solve(x**2 + Hello * x + World, x)))
+    pprint(latex(solve(x**2 + Hello * x + World, x)))
+    pprint(solve(x**2 + Hello * x + World, x))
 
 if __name__ == "__main__":
     f1()

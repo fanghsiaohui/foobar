@@ -1,11 +1,11 @@
 package main
 
-import (
-    "fmt"
-)
+import "fmt"
 
 func main(){
-    for x:=0;x<10;x++ {
-        fmt.Printf("x=%d\n", x)
+    var x, s int
+    for ;x<=10;x++ {
+        s += x
+        fmt.Printf("x=%d\ts=%d\n", x, s)
     }
 }
