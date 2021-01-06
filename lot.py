@@ -22,8 +22,8 @@ def ltr(a):
 dlt=[35, 5, 12, 2]
 ssq=[33, 6, 16, 1]
 print("DLT:")
-for i in range(3):
+for i in range(2):
     ltr(dlt)
 print("SSQ:")
-for i in range(3):
+for i in range(2):
     ltr(ssq)
