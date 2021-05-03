@@ -7,7 +7,7 @@ import numpy as np
 # 33, 6, 16, 1
 
 def ltr(a):
-    front=np.arange(1,a[0]+1)
+    m=list(range(1,a[0]+1))
     n1=a[1]
     back=np.arange(1,a[2]+1)
     n2=a[3]
