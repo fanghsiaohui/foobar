@@ -15,6 +15,6 @@ int main(){
     printf("time = %f ms\n", tm * 1000);
     printf("i = %ld\n", i);
     printf("m = %ld\n", m);
-    printf("max of long int: %ld\n",LONG_MAX);
+    //printf("max of long int: %ld\n",LONG_MAX);
     return 0;
 }
