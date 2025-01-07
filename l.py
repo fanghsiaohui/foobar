@@ -14,8 +14,10 @@ def roll_r(m):
 
 def roll_n(m):
     front = np.random.choice(range(1, m[0]+1), m[1], replace=False)
+    front.sort()
     back = np.random.choice(range(1, m[2]+1), m[3], replace=False)
-    return (sorted(front), sorted(back))
+    back.sort()
+    return (front, back)
 
 if __name__ == "__main__":
     try:
@@ -24,4 +26,4 @@ if __name__ == "__main__":
     except:
         m = m0
     print("No.1:\t", roll_r(m))
-    print("No.2:\t", roll_n(m))
+    print("No.2:\t", roll_n(m)[0], roll_n(m)[1])
