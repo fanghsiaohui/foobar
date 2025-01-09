@@ -25,5 +25,5 @@ if __name__ == "__main__":
         m = mD if i.startswith("d") else mS if i.startswith("s") else m0
     except:
         m = m0
-    print("No.1:\t", roll_r(m))
-    print("No.2:\t", roll_n(m)[0], roll_n(m)[1])
+    print("No.1:\t", roll_r(m)[0], "\t", roll_r(m)[1])
+    print("No.2:\t", roll_n(m)[0], "\t", roll_n(m)[1])
